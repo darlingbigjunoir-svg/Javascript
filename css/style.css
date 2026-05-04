@@ -2,27 +2,24 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
 }
 
 body {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: black;
 }
 
-#bulbOn {
-    width: 80px;
+#bulbOn,
+#bulbOff {
+    width: clamp(80px, 30vmin, 200px);
     height: auto;
     cursor: pointer;
+    display: block;
 }
 
 #bulbOff {
-    width: 80px;
-    height: auto;
-    cursor: pointer;
     display: none;
 }
